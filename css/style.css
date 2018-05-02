@@ -1,1 +1,127 @@
-style.css
+body {
+  font-size: 16px;
+  color: #000;
+  background-color: #ffffff;
+  font-family: 'Oxygen', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%
+}
+
+ /*HEADER */
+#header-nav{
+	background-color: #808080;
+	border-radius: 0;
+	border:2px solid black;
+}
+.navbar-brand{
+	padding-bottom: 25px;
+	margin-bottom: 10px;
+}
+
+.navbar-brand h1 { 
+  font-family: 'Lora', serif;
+  color: #000;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+	margin: 0;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid black;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid  black;
+}
+/* END HEADER */
+
+.head-1{
+	text-align: center;
+	font-size: 1.6em; 
+	font-weight: bold;
+	color: #000000;
+	padding-bottom: 25px;
+}
+.cont{
+	position: relative;
+	margin-left: 30px;
+	margin-right: 30px;
+	background-color: #808080;
+	padding-right: 15px;
+	right: 0;
+	width:95%;
+}
+h4{
+	text-align: center;
+	font-weight: bold;
+	margin-top: 0;
+	padding-bottom: 0;
+	padding-top:0;
+}
+.cnt{
+	margin: 15px;
+}
+.cnt.para{
+	margin-left: -10px;
+	padding-right: 10px;
+}
+
+/*/*Larger devices only*/
+@media(min-width: 1200px){
+
+}
+
+/* MEDIUM DEVICES ONLY */
+@media(min-width: 992px) and (max-width: 1199px){
+
+}
+
+/* SMALL DEVICES ONLY */
+@media(min-width: 768px) and (max-width: 991px){
+	#collapsable-nav a{
+    /* Collapsed nav menu glyph*/
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span{
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  .cont{
+  	position: relative;
+  	right: 10px;
+  	left: -5px;
+  	margin-right: 30px;
+  	padding-right: 30px;
+  	width: 95%;
+  }
+}
+
+/* extra small devices */
+@media(max-width: 767px){
+	.cont{
+		position: relative;
+		right: 30px;
+		left: -20px;
+		padding-left: 15px;
+		width:80%;
+		border-bottom-width: 80%;
+		margin-left: 50px;
+	}
+	.cnt{
+		margin-left: 0;
+		padding-right: 15px
+	}
+}
