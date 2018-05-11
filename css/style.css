@@ -29,9 +29,12 @@ body {
   margin-top: 0;
   margin-left: 0;
   padding-left: 0;
+  float: left;
 }
+
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
+
 }
 #nav-list {
   margin-top: 10px;
@@ -39,30 +42,34 @@ body {
 #nav-list a {
 	margin: 0;
   color: #000;
-  background-color: #fff;
+  background-color: #808080;
   text-align: center;
-  border: 1px solid black;
 }
+
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid  black;
+  border: 2px solid  black;
+}
+
+#nav-list a:hover {
+  background: #E7E7E7;
 }
 /* END HEADER */
 
-.head-1{
+.page-header{
 	text-align: center;
-	font-size: 1.6em; 
-	font-weight: bold;
-	color: #000000;
-	padding-bottom: 25px;
+	border-bottom: 0;
 }
 .cont{
 	position: relative;
 	margin-left: 30px;
 	margin-right: 30px;
 	background-color: #808080;
-	padding-right: 15px;
+	padding-right: 45px;
 	right: 0;
 	width:95%;
+	text-align: justify;
+	height: 1000px;
+	margin-bottom: 10px;
 }
 h4{
 	text-align: center;
@@ -111,14 +118,24 @@ h4{
 
 /* extra small devices */
 @media(max-width: 767px){
+	.navbar-brand h1{
+		position: relative;
+		left:0;
+	}
+	.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 8px;
+	}
 	.cont{
 		position: relative;
 		right: 30px;
 		left: -20px;
 		padding-left: 15px;
+		padding-right: 20px;
 		width:80%;
 		border-bottom-width: 80%;
 		margin-left: 50px;
+		height: 50%;
+		overflow: all;
 	}
 	.cnt{
 		margin-left: 0;
